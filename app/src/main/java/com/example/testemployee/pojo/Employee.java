@@ -24,9 +24,17 @@ public class Employee {
     @SerializedName("avatr_url")
     @Expose
     private String avatrUrl;
-    @SerializedName("specialty")
-    @Expose
-    private List<Specialty> specialty = null;
+    //@SerializedName("specialty")
+    //@Expose
+    //private List<Specialty> specialty = null;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -60,11 +68,11 @@ public class Employee {
         this.avatrUrl = avatrUrl;
     }
 
-    public List<Specialty> getSpecialty() {
+    /*public List<Specialty> getSpecialty() {
         return specialty;
     }
 
     public void setSpecialty(List<Specialty> specialty) {
         this.specialty = specialty;
-    }
+    }*/
 }
